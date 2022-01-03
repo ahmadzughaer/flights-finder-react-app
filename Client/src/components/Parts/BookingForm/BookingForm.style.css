@@ -1,0 +1,8 @@
+.BookingForm {
+    align-items: center;
+    display: flex;
+    width: 80%;
+    height: 25vh;
+    background: #3f4a5bd7;
+    border-radius: 15px;
+}
