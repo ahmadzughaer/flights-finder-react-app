@@ -37,3 +37,15 @@
     margin-left: 15%;
     position:relative;
 }
+
+.span {
+  margin-left: 2%;
+}
+
+.formErrors {
+  display: flex;
+  justify-content: center;
+  margin-left: -10%;
+  width: 100%;
+
+}

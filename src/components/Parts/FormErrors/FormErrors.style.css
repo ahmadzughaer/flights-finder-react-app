@@ -1,0 +1,14 @@
+.formErrors {
+  display: flex;
+  justify-content: center;
+  margin-left: -10%;
+  width: 100%;
+
+}
+
+.error {
+  color: red;
+  background: rgba(240, 238, 233, 0.507);
+  padding: 2px;
+  font-weight: bold;
+}

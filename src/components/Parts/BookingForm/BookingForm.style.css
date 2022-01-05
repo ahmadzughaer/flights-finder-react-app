@@ -1,8 +1,53 @@
 .BookingForm {
-    align-items: center;
-    display: flex;
-    width: 80%;
-    height: 25vh;
-    background: #3f4a5bd7;
-    border-radius: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 25vh;
+  background: #3f4a5bd7;
+  border-radius: 15px;
+}
+.Options {
+  margin-bottom: 2%;
+  justify-content: center;
+  display: flex;
+}
+
+.Options input {
+  margin-right: 2%;
+}
+
+form {
+  color: #d1a769;
+  font-weight: bold;
+}
+
+.fa-plane {
+  margin-left: 4%;
+}
+
+.Submit {
+  margin-top: 2%;
+  width: 9em;
+  height: 2.5em;
+  border-radius: 10px;
+  color: rgb(250, 203, 14);
+  background: rgb(66, 66, 66);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.Submit:hover {
+  background: rgb(161, 159, 159);
+}
+.Destination label {
+  margin-left: 1.5em;
+}
+
+.Destination input {
+  margin-left: 0.5em;
+}
+
+.Link {
+  margin-left: 40%;
 }

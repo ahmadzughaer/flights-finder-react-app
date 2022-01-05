@@ -1,0 +1,32 @@
+.List {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.details {
+  display: flex;
+  gap: 10px;
+}
+
+.Card {
+  display: flex;
+  justify-content: center;
+  margin: 4%;
+  background: url('../../../assets/images/airplane-icon-png-2510.png') no-repeat, 
+  url('../../../assets/images/airplane-icon-png-2510.png') no-repeat;
+  background-size: 250px;
+  background-position-y: 20px, 20px;
+  background-position-x: 20px, 1150px;
+
+
+}
+
+.EmptyList {
+    width: 100%;
+    background: olive;
+    text-align: center;
+}
+
+a {
+  text-decoration: none;
+}

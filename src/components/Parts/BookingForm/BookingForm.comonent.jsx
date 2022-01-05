@@ -1,8 +1,9 @@
 import React from "react";
 import "./BookingForm.style.css";
+import {Link} from 'react-router-dom'
+
 
 function BookingForm(props) {
-
   return (
     <div className="BookingForm">
       <form>
@@ -13,6 +14,7 @@ function BookingForm(props) {
             name="RadioBtn"
             value={props.tripOptionValue1}
             onClick={props.onClickOption1}
+            onChange={props.onChangeOption1}
           />
           <label>One Way</label>
           <input
@@ -20,11 +22,12 @@ function BookingForm(props) {
             name="RadioBtn"
             value={props.tripOptionValue2}
             onClick={props.onClickOption2}
+            onChange={props.onChangeOption2}
           />
         </div>
         <div className="Destination">
           <label>From</label>
-          <input type={"text"} defaultValue={props.defaultValue} />
+          <input type={"text"} defaultValue={props.defaultValue} size="10" />
           <label>To</label>
           <input
             onFocus={props.onFocus}
@@ -33,6 +36,7 @@ function BookingForm(props) {
             value={props.value}
             onChange={props.onChange}
             className={props.ClassName}
+            size="10"
           />
           <label>Departure</label>
           <input
@@ -49,12 +53,16 @@ function BookingForm(props) {
             onChange={props.onChangeDate2}
           />
         </div>
-        <input
-          type={"button"}
-          name="Search Flight"
-          value={"Search Flight"}
-          onClick={props.onClick}
-        />
+       
+          <button
+            className="Link Submit"
+            name="Search Flight"
+            type="button"
+            onClick={props.onClick}
+          >
+            Search Flight<i className="fas fa-plane"></i>
+          </button>
+
       </form>
     </div>
   );
