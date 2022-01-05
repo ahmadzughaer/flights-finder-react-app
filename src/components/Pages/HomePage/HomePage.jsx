@@ -23,14 +23,25 @@ function HomePage() {
   const [departureDate, setDepartureDate] = useState("");
   const [returnDate, setReturnDate] = useState("");
 
-  const [isChecked, setIsChecked] = useState(false);
+  // const [isChecked, setIsChecked] = useState(false);
   const defualt = "Tel Aviv-Yafo";
   let navigate = useNavigate();
 
   useEffect(() => {
+    async function getFlight() {
+      myApi = axios.create({
+        baseURL: `https://map.aviasales.ru/prices.json?origin_iata=TLV&one_way=${selectedRadio}`,
+      });
+      try {
+        const flights = await myApi.get("");
+        setFlights(flights.data);
+      } catch (err) {
+        console.log(err);
+      }
+    }
     fetchData();
     getFlight();
-  }, []);
+  }, );
 
   // fetch all the data from Api
   async function fetchData() {
@@ -42,17 +53,7 @@ function HomePage() {
     }
   }
 
-  async function getFlight() {
-    myApi = axios.create({
-      baseURL: `https://map.aviasales.ru/prices.json?origin_iata=TLV&one_way=${selectedRadio}`,
-    });
-    try {
-      const flights = await myApi.get("");
-      setFlights(flights.data);
-    } catch (err) {
-      console.log(err);
-    }
-  }
+
 
   // enable return date when choose round trip
   const HandleChangeValue1 = () => {
@@ -157,9 +158,9 @@ function HomePage() {
   };
 
   // toggele to
-  const handleCheckedChange = (e) => {
-    setIsChecked((prevCheckedValue) => !prevCheckedValue);
-  };
+  // const handleCheckedChange = (e) => {
+  //   setIsChecked((prevCheckedValue) => !prevCheckedValue);
+  // };
 
   // on submit first check the validation then redirect to flight page
   const onSubmit = () => {
@@ -195,8 +196,8 @@ function HomePage() {
               returnDate={returnDate}
               onChangeDate1={setTripDate1}
               onChangeDate2={setTripDate2}
-              onChangeOption1={handleCheckedChange}
-              onChangeOption2={handleCheckedChange}
+              // onChangeOption1={handleCheckedChange}
+              // onChangeOption2={handleCheckedChange}
             />
 
             <div className={className} onClick={onClickEvents}>
