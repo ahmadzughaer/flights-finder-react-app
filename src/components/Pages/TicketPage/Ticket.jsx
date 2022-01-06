@@ -3,6 +3,7 @@ import "./Ticket.style.css";
 import {name, email} from '../FlightDetails/FlightDetails.component'
 function Ticket () {
     const [className, setClass] = useState("Hide");
+    console.log('my email',name)
 
     const onClick = () => {
         setClass('HiddenText')

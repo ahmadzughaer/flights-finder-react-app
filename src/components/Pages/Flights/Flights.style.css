@@ -70,3 +70,29 @@ color: dimgrey ;
   color: rgb(243, 21, 21);
   font-weight: bold;
 }
+
+@media screen and (max-width: 600px){ 
+  .LogoImg {
+    width:5em;
+  
+  }
+
+  .notFindText {
+    font-size: .8em;
+    }
+    
+    .notFindText span {
+      font-size: .8em;
+    }
+
+    .textDetails{
+      font-size: .7em;
+    }
+
+    
+.BookButton {
+  width: 1.5em;
+  font-size: .7em;
+  margin-top: 90px;
+}
+}

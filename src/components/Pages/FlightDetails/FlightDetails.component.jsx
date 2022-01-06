@@ -40,6 +40,8 @@ const setUserEmail = (e) => {
   setEmail(e.target.value);
   email = e.target.value;
 };
+
+console.log('email',email)
 const setDoB = (e) => {
   setDateOfBirth(e.target.value);
   dateOfBirth = e.target.value

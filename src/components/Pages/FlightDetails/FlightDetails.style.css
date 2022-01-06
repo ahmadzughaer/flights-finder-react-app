@@ -86,3 +86,9 @@ input[type=date]:required:invalid::-webkit-datetime-edit {
 input[type=date]:focus::-webkit-datetime-edit {
     color: black !important;
 }
+
+@media screen and (max-width: 600px){ 
+  .text {
+font-size: .8em;
+  }
+}

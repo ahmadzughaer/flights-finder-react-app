@@ -43,3 +43,29 @@
 .NavLink:hover {
     color: #d1a7697e;
 }
+
+@media screen and (max-width: 600px){
+    .LogoContainer {
+        display: flex;
+        width: 10em;
+        position:absolute;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Logo {
+        width: 50%;
+        cursor: pointer;
+        object-fit: contain;
+    }
+    .Text {
+        font-size: 1em;
+    }
+    .NavLink {
+        font-size: 1em;
+      
+    }
+    .Header {
+        gap: 50%;
+    }
+  }

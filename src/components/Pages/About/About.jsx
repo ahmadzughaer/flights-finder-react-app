@@ -11,7 +11,7 @@ function About() {
         <img className="myImage" src={myImage} alt="myImg"/>
 
         <h2>Why this project?</h2>
-        <h3>As a person who is passionate about travel always I wanted to make something will help me during planning my <br></br>next trip so I hope this small website will be usefull at some point</h3>
+        <h3>As a person who is passionate about travel always I wanted to make something that will help me during planning my <br></br>next trip so I hope this small website will be useful at some point</h3>
         <h2>What I want to improve in it?</h2>
         <h3>At this point this website just can search for one-way flights from Tel-Aviv to all destinations<br></br>,so later on I will make it from anywhere to anywhere with more features</h3>
       </div>

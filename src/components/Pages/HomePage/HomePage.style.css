@@ -56,3 +56,16 @@
   width: 100%;
 
 }
+
+@media screen and (max-width: 600px){ 
+  .Display {
+    width: 50%;
+    height: 30vh;
+    background: rgba(255, 255, 255, 0.733);
+    overflow-y: scroll;
+    position: absolute;
+    margin-top: -80%;
+    margin-left: 25%;
+    text-align: center;
+  }
+}
