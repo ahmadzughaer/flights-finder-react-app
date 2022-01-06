@@ -28,20 +28,9 @@ function HomePage() {
   let navigate = useNavigate();
 
   useEffect(() => {
-    async function getFlight() {
-      myApi = axios.create({
-        baseURL: `https://map.aviasales.ru/prices.json?origin_iata=TLV&one_way=${selectedRadio}`,
-      });
-      try {
-        const flights = await myApi.get("");
-        setFlights(flights.data);
-      } catch (err) {
-        console.log(err);
-      }
-    }
     fetchData();
     getFlight();
-  }, );
+  }, []);
 
   // fetch all the data from Api
   async function fetchData() {
@@ -53,7 +42,17 @@ function HomePage() {
     }
   }
 
-
+  async function getFlight() {
+    myApi = axios.create({
+      baseURL: `https://map.aviasales.ru/prices.json?origin_iata=TLV&one_way=${selectedRadio}`,
+    });
+    try {
+      const flights = await myApi.get("");
+      setFlights(flights.data);
+    } catch (err) {
+      console.log(err);
+    }
+  }
 
   // enable return date when choose round trip
   const HandleChangeValue1 = () => {
@@ -97,9 +96,11 @@ function HomePage() {
     });
   };
 
+  // filter based on departure date
   const filterFlights = () => {
     filterdFlightArray = allFlights.filter((el) => {
-      return el.depart_date === departureDate;
+      return el.depart_date === departureDate
+      //  && el.return_date === returnDate ;
     });
   };
 
@@ -177,7 +178,7 @@ function HomePage() {
           <div className="InputWrapper">
             <FormErrors
               ClassName3={className3}
-              errorMessage={"**You need to fill all the options**"}
+              errorMessage={"**You need to fill all the fields**"}
             />
 
             <BookingForm

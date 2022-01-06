@@ -69,13 +69,15 @@
 }
 .center .inputbox [type="button"] {
   width: 50%;
-  background: dodgerblue;
-  color: #fff;
+  background: #3F4A5B;
+  color: #D1A769;
   border: #fff;
   cursor: pointer;
+  font-weight: bold;
+  margin-left: 35%;
 }
 .center .inputbox:hover [type="button"] {
-  background: linear-gradient(45deg, greenyellow, dodgerblue);
+  background: transparent;
 }
 
 input[type=date]:required:invalid::-webkit-datetime-edit {

@@ -26,11 +26,18 @@
   position: absolute;
   margin-top: -8%;
   margin-left: 22%;
+  text-align: center;
 }
 
 .AllDestinations {
     display: block;
     cursor: pointer;
+    color: #3F4A5B;
+    font-weight: bold;
+}
+
+.AllDestinations:hover {
+  background: #d1a769;
 }
 .InputWrapper {
     width: 100%;

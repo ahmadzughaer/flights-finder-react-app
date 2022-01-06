@@ -1,6 +1,5 @@
 import React from "react";
 import "./BookingForm.style.css";
-import {Link} from 'react-router-dom'
 
 
 function BookingForm(props) {
@@ -55,7 +54,7 @@ function BookingForm(props) {
         </div>
        
           <button
-            className="Link Submit"
+            className="Submit"
             name="Search Flight"
             type="button"
             onClick={props.onClick}

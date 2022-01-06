@@ -4,9 +4,9 @@
     background: #3F4A5B;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 85%;
 }
 
 .Logo {
@@ -31,4 +31,15 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 5%;
+}
+
+.NavLink {
+    color: #d1a769;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.NavLink:hover {
+    color: #d1a7697e;
 }

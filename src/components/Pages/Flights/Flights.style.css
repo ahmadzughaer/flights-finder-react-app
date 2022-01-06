@@ -15,18 +15,58 @@
   background: url('../../../assets/images/airplane-icon-png-2510.png') no-repeat, 
   url('../../../assets/images/airplane-icon-png-2510.png') no-repeat;
   background-size: 250px;
-  background-position-y: 20px, 20px;
-  background-position-x: 20px, 1150px;
+  background-position-y: 20px, -30px;
+  background-position-x: 20px, 1200px;
 
 
 }
 
 .EmptyList {
     width: 100%;
-    background: olive;
+    background: rgba(128, 128, 0, 0.431);
     text-align: center;
+    height: 30vh;
+    align-items: center;
 }
 
 a {
   text-decoration: none;
+}
+
+.FlightDetails{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  height: 40vh;
+}
+
+.LogoImg {
+  width:20em;
+
+}
+
+
+.textDetails{
+  margin-left: 10%;
+}
+h4 {
+  color: dimgrey;
+}
+
+.BookButton {
+  margin-top: 10%;
+}
+
+.ImgContainer {
+  margin-right: 8%;
+}
+
+.notFindText {
+text-align: center;
+color: dimgrey ;
+}
+
+.notFindText span {
+  color: rgb(243, 21, 21);
+  font-weight: bold;
 }
