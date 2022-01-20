@@ -11,7 +11,7 @@ ______________________________________
 
 ## How it works: 
 It's like a flights search engine you choice your destination and dates to get the result.  
-At this moment the work work only from tel-aviv to anywhere in the world.
+At this moment the app works only from tel-aviv to anywhere in the world.
 _____________________________________
 
-You can chek this demo: [link](https://competent-saha-de0a9e.netlify.app/)
+You can chek this demo: [Link](https://competent-saha-de0a9e.netlify.app/)
